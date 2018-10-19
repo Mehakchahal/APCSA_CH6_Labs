@@ -1,9 +1,9 @@
 package Shopping;
 
 /**
- * Name:
- * Date:
- * Period:
+ * Name: Mehak Chahal
+ * Date: 10/19/18
+ * Period: 1st period
  *
  * Shopping.ShoppingCart.java
  *
@@ -18,18 +18,19 @@ public class ShoppingCart
     private double totalPrice;  // total price of items in the cart
     private int capacity;       // current cart capacity
     //TODO 1a) Declare a cart instance variable
-
+    private int cart;
 
     /**
      * Creates an empty shopping cart with a capacity of 5 items
      */
+
     public ShoppingCart()
     {
         capacity = 5;
         itemCount = 0;
         totalPrice = 0.0;
         //TODO 1a) Initialize the cart instance variable to the appropriate size
-
+        int[] cart = new int[5];
     }
 
     /**
@@ -41,7 +42,7 @@ public class ShoppingCart
     public void addToCart(String itemName, double price, int quantity)
     {
         //TODO 1b) Complete the addToCart method
-
+        if (itemCount > 5;
     }
 
     //TODO 2b) Complete the getter method getTotalPrice. Remember the getter should not print anything.

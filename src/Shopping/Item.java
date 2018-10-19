@@ -1,8 +1,8 @@
 package Shopping;
 /**
- * Name:
- * Date:
- * Period:
+ * Name: Mehak
+ * Date: 10/19/18
+ * Period: 1st period
  *
  * Shopping.Item.java
  *

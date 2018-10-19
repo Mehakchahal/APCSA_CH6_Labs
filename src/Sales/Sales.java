@@ -104,7 +104,7 @@ public class Sales
     //TODO 3a) Do the same for an indexOfMin method
         int min = Integer.MAX_VALUE;
         int minLocation = -1;
-        for (int i = 0; );
+        for (int i = 0; i > arr.length; i--)
         {
           if (min > arr[i])
           {
