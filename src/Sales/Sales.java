@@ -9,7 +9,7 @@ package Sales;
  * Reads in and stores sales for each of 5 salespeople.  Displays
  * sales entered by salesperson id and total sales for all salespeople.
  */
-import sun.jvm.hotspot.oops.Array;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -75,7 +75,7 @@ public class Sales
         //TODO 1a) compute and return the average of arr
         //Be sure to use the length instance variable and you may assume that the array is full.
         //If the array does not have at least 1 element in it, throw an IllegalStateException
-        int sum = 0;
+        double sum = 0;
         //loop through the array
         for(int i = 0; i < arr.length; i++)
         {
@@ -102,15 +102,20 @@ public class Sales
     }
 
     //TODO 3a) Do the same for an indexOfMin method
+    public static int indexOfMin(int[] arr)
+    {
         int min = Integer.MAX_VALUE;
         int minLocation = -1;
-        for (int i = 0; i > arr.length; i--)
+        for (int i = 0; i < arr.length; i++)
         {
-          if (min > arr[i])
-          {
-            min = arr[i];
-            minLocation = i;
-          }
+            if (min > arr[i])
+            {
+                min = arr[i];
+                minLocation = i;
+            }
         }
         return minLocation;
+
+    }
+
 }

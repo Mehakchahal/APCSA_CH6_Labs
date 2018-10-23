@@ -42,7 +42,13 @@ public class ShoppingCart
     public void addToCart(String itemName, double price, int quantity)
     {
         //TODO 1b) Complete the addToCart method
-        if (itemCount > 5;
+        if (int itemCount > 5; itemCount++);
+    }
+
+    // TODO 2a) Write a program ShopTest that simulates shopping.
+    public ShopTest ()
+    {
+
     }
 
     //TODO 2b) Complete the getter method getTotalPrice. Remember the getter should not print anything.
