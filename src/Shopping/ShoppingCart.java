@@ -18,7 +18,7 @@ public class ShoppingCart
     private double totalPrice;  // total price of items in the cart
     private int capacity;       // current cart capacity
     //TODO 1a) Declare a cart instance variable
-    private int cart;
+    private Item[] cart;
 
     /**
      * Creates an empty shopping cart with a capacity of 5 items
@@ -30,7 +30,7 @@ public class ShoppingCart
         itemCount = 0;
         totalPrice = 0.0;
         //TODO 1a) Initialize the cart instance variable to the appropriate size
-        int[] cart = new int[5];
+        cart = new Item[capacity];
     }
 
     /**
@@ -42,17 +42,22 @@ public class ShoppingCart
     public void addToCart(String itemName, double price, int quantity)
     {
         //TODO 1b) Complete the addToCart method
-        if (int itemCount > 5; itemCount++);
+       cart[itemCount] = new Item(itemName, price, quantity);
+       itemCount++;
+       totalPrice += price * quantity;
     }
 
-    // TODO 2a) Write a program ShopTest that simulates shopping.
-    public ShopTest ()
-    {
-
-    }
+//    // TODO 2a) Write a program ShopTest that simulates shopping.
+//    public ShopTest ()
+//    {
+//
+//    }
 
     //TODO 2b) Complete the getter method getTotalPrice. Remember the getter should not print anything.
-
+    public double getTotalPrice()
+    {
+        return this.totalPrice;
+    }
 
     public int getCartLength()
     {
