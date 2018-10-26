@@ -10,7 +10,8 @@ package CardGame;
  * Contains a deck of Card objects.  Methods to shuffle and deal Cards.
  */
 
-public class DeckOfCards {
+public class DeckOfCards
+{
 
     private Card deck[];
     private int currentCard;
@@ -18,7 +19,6 @@ public class DeckOfCards {
     private String faces[] = {"Ace", "Deuce", "Three", "Four", "Five", "Six",
             "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     private String suits[] = { "Hearts", "Diamonds", "Clubs", "Spades" };
-
     /**
      * Constructor fills a deck array with Card objects.
      */
@@ -63,6 +63,7 @@ public class DeckOfCards {
         else
             return null; // return null to indicate no more cards
     }
+
   
 }
 
